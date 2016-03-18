@@ -1,0 +1,592 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Mega Slider</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.css"/>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="layout" class="">
+	<aside id="menu" class="menu">
+        <div class="logo">
+            <h1><a href="#">Mega Slider</a></h1>
+            <span>Module help</span>
+            <a id="menu-link" class="icon-menu" href="#menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li class="hasSubmenu">
+                    <a href="#gettingstarted" class="">
+                        <i class="fa fa-file"></i>
+                        <span>Getting Started</span>
+                    </a>
+                    <ul style="display: none;">
+                        <li>
+                            <a href="#gs-requirement">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Requirement</span>
+                            </a>
+                        </li>
+                       <li>
+                            <a href="#gs-package">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Download Package Contents</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gs-install">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Install the module</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gs-update">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Module update</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#videos" class="">
+                        <i class="fa fa-cog"></i>
+                        <span>Video tutorial</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#managing" class="">
+                        <i class="fa fa-cog"></i>
+                        <span>Managing sliders</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#config" class="">
+                        <i class="fa fa-bars"></i>
+                        <span>Basic config</span>
+                    </a>
+                </li>
+                
+                <li class="hasSubmenu">
+                    <a href="#editcustom" class="">
+                        <i class="fa fa-file-o"></i>
+                        <span>Edit &amp; Custom slide items</span>
+                    </a>
+                    <ul style="display: none;">
+                        <li>
+                            <a href="#es-slideitems">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Slide items panel</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#es-tools">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Tools panel</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#es-timeline">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Timeline panel</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#workingobjects" class="">
+                        <i class="fa fa-file-o"></i>
+                        <span>Working with objects</span>
+                    </a>
+                </li>
+                <li class="hasSubmenu">
+                    <a href="#enableslide" class="">
+                        <i class="fa fa-th"></i>
+                        <span>Enable slider</span>
+                    </a>
+                    <ul style="display: none;">
+                        <li>
+                            <a href="#es-block">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Assign slider to region</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#es-node">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Add slider to node</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#customization" class="">
+                        <i class="fa fa-th"></i>
+                        <span>Customization</span>
+                    </a>
+                </li>
+                <li class="hasSubmenu">
+                    <a href="#generalinformation" class="">
+                        <i class="fa fa-info-circle"></i>
+                        <span>General Information</span>
+                    </a>
+                    <ul style="display: none;">
+                    	<li>
+                            <a href="#gi-faq">
+                                <i class="fa fa-angle-right"></i>
+                                <span>FAQs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gi-help">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Need help?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gi-bug">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Report a bug</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gi-credits">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Credits</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+	</aside>
+    <!-- /#menu -->
+
+	<section id="main">
+<!--         <nav class="slideshow-bar">
+            
+            <a id="scrolltop" href="#">Top &uarr;</a>
+        </nav> -->
+        <!-- /.slideshow-bar -->
+
+        <header class="header content">
+            <div>
+                <h1>Mega Slider - Drag &amp; Drop Drupal Slideshow</h1>
+                <small class="version">Version 2.11</small>
+                <p>Thank you very much for purchasing our products. This document will guide you through the setup process of this module. If you have questions about anything about this theme that isn't covered in this documentation, please <a href="http://megadrupal.com/forum/module-support/mega-slider" target="_blank">post your question here</a>.</p>
+            </div>
+        </header>
+        <!-- /.header -->
+		
+        <section id="gettingstarted" class="content slide">
+            <div>
+                <h2>Getting started</h2>
+                <p>You can insert your development link (start with http://) below to make some link in this document clickable and go straight to your site</p>
+                <p><input type="text" id="devlink" placeholder="http://your-develop-link.com" /></p>
+                <ol>
+                	<li><a href="#gs-requirement">Requirement</a></li>
+                    <li><a href="#gs-package">Download package contents</a></li>
+                    <li><a href="#gs-install">Install the module</a></li>
+                    <li><a href="#gs-update">Module update</a></li>
+                </ol>
+            </div>
+        </section><!-- /#Getting Started -->
+
+        <section id="gs-requirement" class="content slide">
+            <div>
+                <h2>Requirement</h2>
+                <p>Let's go over the minimum requirements that you will need in order to have a fully functioning site running our module.</p>
+                <ul>
+                    <li><a href="http://drupal.org/project/drupal" target="_blank">Drupal 7</a></li>
+                    <li><a href="http://drupal.org/project/media" target="_blank">Media</a> and <a href="http://drupal.org/project/ctools" target="_blank">Ctool</a> modules</li>
+                    <li>Web server: Apache, Nginx, or Microsoft IIS</li>
+                    <li>PHP 5.2.5 or higher (5.3 recommended)</li>
+                    <li>MySQL 5.0.15 or higher with PDO, PostgreSQL 8.3 or higher with PDO, SQLite 3.3.7 or higher</li>
+                </ul>
+                <p>If you already have a working install of Drupal modules feel free to skip ahead to theme <a href="#gs-install">installation</a>.</p>
+            </div>
+        </section><!-- /#Requirement -->
+
+        <section id="gs-package" class="content slide">
+            <div>
+                <h2>Download package contents</h2>
+                <p>Once you have downloaded and unzipped the apage package you will be faced with a list of files and folders. An explanation of these is as follows. Any item not mentioned here should be ignored for the moment.</p>
+
+                <table>
+                    <tr>
+                        <td class="option">md_slider-7.x-2.7.zip</td>
+                        <td class="value">This is a zip archive of the module. You can use this for installing via Drupal admin interface<td>
+                    </tr>
+                    <tr>
+                        <td class="option">md_slider</td>
+                        <td class="value">This is module folder, you can use to transfer via ftp or just copy to your localhost<td>
+                    </tr>
+                    <tr>
+                        <td class="option">Documentation</td>
+                        <td class="value">This is the help documentation. To view simply open <i>index.html</i> found inside this folder<td>
+                    </tr>
+                </table>
+            </div>
+        </section><!-- /#Download Package Contents -->
+
+        <section id="gs-install" class="content slide">
+            <div>
+                <h2>Install the module</h2>
+                <p>To install Mega Slider module, is not much different to installing any other (free) Drupal modules, so you might be familiar with this process already. If not, please follow instructions below. </p>
+                <p>You can install by using Drupal module uploader or using FTP</p>
+                <h4>Drupal module uploader</h4>
+                <ol>
+                    <li>Download <a href="http://drupal.org/project/media" target="_blank">media</a>, <a href="https://drupal.org/project/file_entity" target="_blank">file entity</a> and <a href="http://drupal.org/project/ctools" target="_blank">ctools</a> modules.</li>
+                    <li>Log into your website </li>
+                    <li>From admin toolbar, click Modules</li>
+                    <li>Click <code>Install new module</code></li>
+                    <li>Browse to the media module file. </li>
+                    <li>Click <code>Install</code> and wait while plugin is uploaded to your server </li>
+                    <li>After successfully message, click "Enable newly added modules"</li>
+                    <li>Click <code>Install new module</code></li>
+                    <li>Browse to the ctools module file. </li>
+                    <li>Click <code>Install</code> and wait while plugin is uploaded to your server </li>
+                    <li>After successfully message, click "Enable newly added modules"</li>
+                    <li>Browse to the module's zip file (it is located in the folder you've downloaded from CodeCanyon) and choose that file. </li>
+                    <li>Click <code>Install</code> and wait while plugin is uploaded to your server </li>
+                    <li>After successfully message, click "Enable newly added modules"</li>
+                    <li>Find <code>MD Slider</code> and tick the checkbox (make sure it is checked)</li>
+                    <li>Scroll to bottom and click <code>Save configuration</code></li>
+                </ol>
+                <p>You maybe ask to install dependent module, just click accept to install it</p>
+                <h4>FTP</h4>
+                <p>You can also install MD Slider via FTP</p>
+                <ol>
+                    <li>Download and extract <a href="http://drupal.org/project/media" target="_blank">media</a>, , <a href="https://drupal.org/project/file_entity" target="_blank">file entity</a>, <a href="http://drupal.org/project/ctools" target="_blank">Ctools</a> module, you will get folder named <mark>media</mark> and <mark>ctools</mark> .</li>
+                    <li>Browse to the module's zip file <!--(it is located in the folder you've downloaded from CodeCanyon) --> and extract that file, you will get folder named "md_slider"</li>
+                    <li>Open your FTP program and FTP into your site and navigate to the <code>sites/all/modules/</code> directory</li>
+                    <li>Upload <code>md_slider</code> and <code>media</code> folder to this directory</li>
+                    <li>Back to your drupal admin toolbar, click Modules</li>
+                    <li>Find <code>MD Slider</code> and tick the checkbox (make sure it is checked)</li>
+                    <li>Scroll to bottom and click <code>Save configuration</code></li>
+                </ol>
+                <p>List require modules:</p>
+                <ul>
+                    <li><a href="http://drupal.org/project/ctools">ctools</a></li>
+                    <li><a href="http://drupal.org/project/media">media</a></li>
+                </ul>
+
+            </div>
+        </section><!-- /#Manual install -->
+
+        <section id="gs-update" class="content slide">
+            <div>
+                <h2>Module update</h2>
+                <p>When module has a bug fixes or enhancements, you will be notified to upgrade..</p>
+				<p>Installing updates is just involves replacing the old module files with the new ones. It's always a good idea to backup everything before you upgrade, especially if you have made any changes to MegaSlider's files, as the upgrade will overwrite all files. Sliders that you created though Drupal admin will all remain intact.</p>
+                <h4>Backing Up</h4>
+                <ol>
+                    <li>It is always a good idea to back up your module before making any changes</li>
+                    <li>Open your FTP program and FTP into your site and navigate to the <mark>sites/all/modules/</mark> directory.</li>
+                    <li>Download the <mark>md_slider</mark> folder and save it as a backup</li>
+                </ol>
+                <h4>Upgrading</h4>
+                <ol>
+                    <li>Download the new version of the module <!-- from CodeCanyon --></li>
+                    <li>Browse to the module's zip file (it is located in the folder you've downloaded from CodeCanyon) and extract that file, you will get folder named <mark>md_slider</mark></li>
+                    <li>Put your site to Maintenance mode (Go to <code>Configuration</code> then <code>Maintenance mode</code>. Make sure the <code>Put site into maintenance mode</code> box is checked and click <code>Save configuration</code>)</li>
+                    <li>Switch to your FTP program, FTP into your site and navigate to the <mark>sites/all/modules/</mark> directory.</li>
+                    <li>Transfer the new <mark>md_slider</mark> folder into the sites/all/modules/ directory on your server, overwrite the existing one.</li>
+                    <li>Run update.php script from your drupal site.</li>
+                </ol>
+                <p>Note: If you are running a local server, just copy and override the files.</p>
+            </div>
+        </section><!-- /#Theme update -->
+        
+        <section id="videos" class="content slide">
+            <div>
+                <h2>Video tutorial</h2>
+                <h4>Install Mega Slider</h4>
+                <iframe width="640" height="360" src="http://www.youtube.com/embed/JDYjaEkC7RA" frameborder="0" allowfullscreen></iframe>
+                <h4>Create Slider</h4>
+                <iframe width="640" height="360" src="http://www.youtube.com/embed/G2LW6RrjhvM" frameborder="0" allowfullscreen></iframe>
+                <h4>The Tools Panel </h4>
+                <iframe width="640" height="360" src="http://www.youtube.com/embed/VLI83i_WCJU" frameborder="0" allowfullscreen></iframe>
+                <h4>The Timeline Panel</h4>
+                <iframe width="640" height="360" src="http://www.youtube.com/embed/YkvFNCqYKco" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+		<section id="managing" class="content slide">
+            <div>
+                <h2>Managing sliders</h2>
+                <p>After installation, you can go to Structure » MD Slider to see Mega Slider overview page.</p>
+                <p><img src="images/slide-overview.png" width="833" height="282"></p>
+                <p>Here you can manage all your sliders, edit, clone or delete a slider.</p>
+                <h4>Creating a new slider</h4>
+                <p>To create a new slider, you can go to Structure » MD Slider and click "Add new MD Slider" to start creating new slider.</p>
+                <h4>Edit slider</h4>
+                <p>One slider is split in two parts: Config and Main slide items. You can click to <strong>Configure</strong> to change slider config and click <strong>Edit</strong> to change slider items.</p>
+                <h4>Cloning an existing slider</h4>
+                <p>Cloning an existing slider is easy, just click <strong>Clone</strong> link from slider overview page.</p>
+                <h4>Delete a slider</h4>
+                <img src="images/slide-delete.png" width="346" height="51">
+                <p>To delete a slider, you need to click <strong>Configure</strong> and scroll to bottom. Here you will find delete button, just click to delete your slider.</p>
+            </div>
+        </section><!-- /#Managing sliders -->
+        
+        <section id="config" class="content slide">
+            <div>
+                <h2>Basic config</h2>
+                <p>At the first screen, you will see several parameters that you can change to customise your slider.</p>
+                <p><img src="images/slide-configure.png" width="900" height="1816" alt="Basic config"></p>
+                <ul>
+                    <li><strong>Slider title</strong>:<br /> This title is just for the administrator to identify the slideshow.</li>
+                    <li><strong>Description</strong>:<br /> If title field is not long enough, you can type description of your slider here</li>
+                    <li><strong>Fullwidth</strong>:<br /> Tick if you want your slider full width</li>
+                    <li><strong>Width</strong>:<br /> Insert your slider width (in pixel). If you checked full width, this value will be effect width.</li>
+                    <li><strong>Height</strong>:<br /> Insert your slider height (in pixel)</li>
+                    <li><strong>Create image style for slide background</strong>:<br /> This function helps you to automatically create image according to your slideshow size. If you have pixel perfect image for slider and don't need automatically created image, uncheck this box. (This option is not available when you enable slider fullwidth)</li>
+                    <li><strong>Slide animation</strong>:<br /> Choose animation to your slide</li>
+                    <li><strong>Enable touch swipe</strong>:<br /> if you want to navigate slide on touch device, check this box</li>
+                    <li><strong>Enable responsive</strong>:<br /> if you want your slider to be automatically  fit to wrapper (the original proportion is remained), check this box</li>
+                    <li><strong>Loop</strong>:<br /> Check if you want slider start over when reaching last item.</li>
+                    <li><strong>Loading bar</strong>:<br /> Enable/disable your slider loading bar </li>
+                    <li><strong>Navigation</strong>:<br /> show next, previous arrows, play button... Here you can choose bullets and thumnails position too.</li>
+                    <li><strong>Border style</strong>:<br /> Click and choose border style for your slider</li>
+                    <li><strong>Slide delay</strong>:<br /> milliseconds between slide transitions</li>
+                    <li><strong>Slide's translation time</strong>:<br /> speed of the transition (in milliseconds)</li>
+                    <li><strong>Google Web Fonts</strong>:<br /> Add google font to use on your slider. If you've already add those fonts to your theme, check "Do not add fonts to theme".</li>
+                </ul>
+                <p>Click Create button, you will go to edit step.</p>
+            </div>
+        </section><!-- /#Basic config -->
+        
+        <section id="editcustom" class="content slide">
+            <div>
+                <h2>Edit &amp; Custom your slide items</h2>
+                <p>After click Create button, you will go to edit page</p>
+  <p><img src="images/edit-page.png" width="1038" height="1025" alt="Edit page"></p>
+  <p>This page split in 3 parts: slide items panel, Tools panel and Timeline panel</p>
+            </div>
+        </section><!-- /#Edit & Custom your slide items -->
+        
+        <section id="es-slideitems" class="content slide">
+            <div>
+                <h2>Slide items panel</h2>
+                <p>Each tab in the slide item panel is representative of each slide item. You can Add new {1}, change slide image and transitions {4}, clone {5}, re-order {2} or remove {3} slide item. Just click and drag your mouse.</p>
+  <p><img src="images/slide-items.png" width="691" height="472" alt="Working with slide items" /></p>
+            </div>
+        </section><!-- /#Slide items panel -->
+        
+        <section id="es-tools" class="content slide">
+            <div>
+                <h2>Tools panel</h2>
+                <p>The Tools panel helps you add new objects, edit object align, background, animation...</p>
+  <p class="ic"><img src="images/tool-panel1.png" width="1040" height="352" alt="Tool panel" /></p>
+  <p class="ic"><img src="images/tool-panel2.png" width="1029" height="375" alt="Tool panel" /></p>
+  <p class="ic"><img src="images/tool-panel3.png" width="1029" height="315" alt="Tool panel" /></p>
+  <p>When you select an object, the Tools panel will show you options. Some tool options are only displayed if you choose a particular type of selected object.</p>
+            </div>
+        </section><!-- /#Tools panel -->
+        
+        <section id="es-timeline" class="content slide">
+            <div>
+                <h2>Timeline panel</h2>
+                <p>The Timeline panel organizes and controls a slide's content over time in layers. Layers are stacked on top of one another, each one contains a specificed text, image or video.</p>
+  <p class="ic"><img src="images/timeline-panel.png" width="1005" height="560" /></p>
+  <p>Slides can have different delay time options, you can drag delay line {6} to change this value.</p>
+  <p>Controls in the layers section of the Timeline make it possible to hide, show {1}, clone {3}, delete {4} or re-order {8} layers. You can drag to adjust layer start {9}, stop {10} time or position {11}.</p>
+            </div>
+        </section><!-- /#Timeline panel -->
+        
+        <section id="workingobjects" class="content slide">
+            <div>
+                <h2>Working with objects</h2>
+                <h4>Add new object</h4>
+    <p>You can add new object to slide item by clicking to icons {1}, {2}, {3} at tools panel. In term of image object, you can upload image from your computer or choose existing image from server. Video object supports Youtube &amp; Vimeo, all you need to do is provide Youtube or Vimeo video link.</p>
+    
+    <h4>Selecting an object</h4>
+    <p>Before you can do anything with any object, you must select it. You can select object with mouse click or using layer in timeline panel. You can also select multi objects by holding ctrl button and click on objects.</p>
+    
+    <h4>Selection information in the tools panel</h4>
+    <p>Whenever you select an object, the tools panel will show information &amp; properties of the object. You can customize objects by changing value from tools panel.</p>
+    
+    <h4>Moving an object</h4>
+    <p>This is a very simple step, and you can move object to exactly place that you want:</p>
+    <ol>
+      <li>Select an object</li>
+      <li>Press &amp; hold left mouse button and move your pointer.</li>
+      <li>Or you can change in tools panel: enter the X and Y coordinates for the location of the top left corner of the selection ({13} - tools panel).</li>
+    </ol>
+    
+    <h4>Aligning objects</h4>
+    <p>The Align commands in the tools panel give you a wide range of arrangement
+    options, allowing you to do any of the following:</p>
+    <ul>
+      <li>Align selected objects along a horizontal or vertical axis. </li>
+      <li>Align selected objects vertically along their right edge, center, or left edge, or horizontally along their top edge,
+        center, or bottom edge.</li>
+    </ul>
+    
+    <h4>Changing objects space</h4>
+    <p>The Space commands in the tools panel help you control space between objects. You can change horizontal or vertical space. </p>
+    <ol>
+      <li>Select 2 or more objects</li>
+      <li>Enter number into space value ({4} - tools panel) (leave blank if you want space evenly)</li>
+      <li>Press space button</li>
+    </ol>
+    <h4>Style an object</h4>
+    <p>You can style an object depending on object type</p>
+    <ul>
+      <li>Image/Video objects: you can change background ({20} - tools panel), make objects transparent ({18} - tools panel), choose style ({19} - tools panel)</li>
+      <li>Text object: with text object, you can do more: choose font family, font size, text align and text color (Font box- tools panel)</li>
+    </ul>
+            </div>
+        </section><!-- /#Working with objects -->
+        
+        <section id="enableslide" class="content slide">
+            <div>
+                <h2>Enable slider</h2>
+  <p>After creating slider, you can use slider as a block or add it to node using custom field.</p>
+            </div>
+        </section><!-- /#Enable slider -->
+        
+        <section id="es-block" class="content slide">
+            <div>
+                <h2>Assign slider to region</h2>
+  <p>After creating slider, your slider will be available as a block, you need to assign it to some region. From admin toolbar, click Structure » Block, find &quot;MD Slider: (your slider name)&quot; and drag it to your desire region.</p>
+  <p><img src="images/assign-to-region.png" width="615" height="252" alt="Assign slider to region"></p>
+
+            </div>
+        </section><!-- /#Enable slider -->
+        
+        <section id="es-node" class="content slide">
+          <div>
+                <h2>Add slider to node</h2>
+  <p>You can add slider to node using custom field.</p>
+  <ol>
+  	<li>Navigate to the Content types page (Administer » Structure » Content types). </li>
+    <li>In the table, locate the row that contains your content type and click the <code>manage fields</code> link.</li>
+    <li>In the Add new field section, enter a label for the field.</li>
+	<li>In the Field name field, enter the machine name for the field. You can only use numbers, lower-case letters and the underscore character (_).</li>
+	<li>In the field type list, select MD Slider Field<br>
+    	<p><img src="images/slide-field.png" width="711" height="695"  alt=""/></p>
+    </li>
+    <li>Click <code>Save</code>.</li>
+  </ol>
+            </div>
+        </section><!-- /#Enable slider -->
+        
+        <section id="customization" class="content slide">
+            <div>
+                <h2>Customization</h2>
+                <p>If you do want to create a custom style for your slider you can use a copy of the default css file, which is held in the same folder as this help file - see <a href="md-slider-style.css"> md-slider-style.css</a>.</p>
+  <p><img src="images/customization.png" width="543" height="363" alt="Customization"></p>
+  <p>MegaSlider will check if you have custom file and use it. The following examples will explain the style suggestion names:</p>
+  <ul>
+    <li>default_theme/css/md-slider-style.css</li>
+    <li>sites/all/libraries/megadrupal/md-slider/md-slider-style-{ID}.css</li>
+    <li>sites/all/libraries/megadrupal/md-slider/md-slider-style.css</li>
+  </ul>	
+<h4>Photoshop file</h4>
+  <p>Photoshop file just for custom border style. If your background is not white, and you use rounded border (border style - basic config step), change first layer color to fit your layer style. Export file (png 24) to md_slider/images/border folder.</p>
+            </div>
+        </section><!-- /#Customization -->
+        
+        <section id="generalinformation" class="content slide">
+            <div>
+                <h2>General information</h2>
+            </div>
+        </section>
+        <!-- /#General information -->
+        
+        <section id="gi-faq" class="content slide">
+            <div>
+                <h2>FAQs</h2>
+                <p>Here you can find answers to the Frequently Asked Question about Mega Slider</p>
+				<h4>There's a new version of Mega Slider available, how can I get it and update it on my site? </h4>
+                <ul>
+                	<li>First, login to CodeCanyon and under your profile click Downloads link.</li>
+                	<li>Re-download Mega Slider and extract it.</li>
+                    <li>Check <a href="#gs-update">Module update</a> step</li>
+                </ul>
+                <h4>Can I update Mega Slider if I have purchased it in the theme? </h4>
+                <p>In order to receive latest updates of Mega Slider you need to have separate license which you can buy via CodeCanyon. Otherwise you need to wait for your theme author to update Mega Slider and provide you newest version.</p>
+				<p>It is also important to mention that our support system is for those who have purchased Mega Slider directly. If you have purchased it within a theme, you should contact your theme author for support. </p>
+                <!--<h4></h4>
+                <p></p>
+                <h4></h4>
+                <p></p>
+                <h4></h4>
+                <p></p>
+                <h4></h4>
+                <p></p>
+                -->
+            </div>
+        </section>
+        <!-- /#Need help -->
+        
+        <section id="gi-help" class="content slide">
+            <div>
+                <h2>Need help?</h2>
+                <p>If you need help with setting up the template, please <a href="http://megadrupal.com/forum/module-support/mega-slider">post your question here</a>. There are a few notes:</p>
+				<ul class="arrowlist">
+					<li>Before you ask a question please make sure to scan the menu and read the specific section of your question.</li>
+					<li>If it's a specific Drupal module question, Google (or any other search engine) is your friend and probably a hundred times faster in replying.</li>
+					<li>If it's possible, please provide a link to your (demo) website so our stuff are able to quickly scan for possible issues.</li>
+				</ul>
+            </div>
+        </section>
+        <!-- /#Need help -->
+        
+        <section id="gi-bug" class="content slide">
+            <div>
+                <h2>Report a bug</h2>
+                <p>If you found a bug, please <a href="mailto:info@megadrupal.com">send us an e-mail</a> with a (small) description of the issue. Your help is always apreciated.</p>
+            </div>
+        </section>
+        <!-- /#Report a bug -->
+        
+        <section id="gi-credit" class="content slide">
+            <div>
+                <h2>Credits</h2>
+                <p>Modules</p>
+                <ul>
+                    <li><a href="http://drupal.org/project/ctools">ctools</a></li>
+                    <li><a href="http://drupal.org/project/media">media</a></li>
+                </ul>
+                <p>Frontend</p>
+                <ul>
+  	<li><a href="http://daneden.me/animate/" target="_blank" rel="nofollow">CSS3 animation</a></li>
+    <li><a href="http://www.minimamente.com/magic-css3-animations/" target="_blank" rel="nofollow">Magic CSS3 animation</a></li>
+    <li><a href="http://tympanus.net/codrops/2012/06/05/fullscreen-slit-slider-with-jquery-and-css3/" target="_blank" rel="nofollow">Slit slider</a></li>
+    <li><a href="http://www.netcu.de/jquery-touchwipe-iphone-ipad-library" target="_blank" rel="nofollow">Touch Wipe jQuery Plugin</a></li>
+    </ul>
+    <p>Admin</p>
+    <ul>
+    <li><a href="http://www.eyecon.ro/colorpicker/" target="_blank" rel="nofollow">jQuery ColorPicker</a></li>
+    <li><a href="http://jqueryui.com/" target="_blank" rel="nofollow">jQuery UI</a></li>
+  </ul>
+            </div>
+        </section>        
+
+        <footer id="footer">
+            <p>&copy; 2013 <a href="http://megadrupal.com" target="_blank">MegaDrupal</a>. All Rights Reserved.</p>
+        </footer>
+        <!-- /#footer -->
+
+	</section>
+        <!-- /#main -->
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.plugins.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
